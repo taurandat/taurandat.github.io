@@ -6,18 +6,19 @@
     <title>Go, Gopher! | dat</title>
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/fonts.css" />
-    <link href="https://fonts.googleapis.com/css?family=Muli|Inconsolata" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded|Inconsolata" rel="stylesheet">
+    <link href="//cdn.bootcss.com/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet">
   </head>
 
   <body>
     <nav>
     <ul class="menu">
       
+      <li><a href="/">Home</a></li>
+      
     </ul>
     <hr/>
     </nav>
-
 <div class="article-meta">
 <h1><span class="title">Go, Gopher!</span></h1>
 
@@ -71,11 +72,11 @@ thấy <code>$ X_i $</code> sẽ là một biến <a href="https://en.wikipedia.
 với <code>$ p_i = \frac{n - (i-1)}{n} $</code>. Vậy nên <code>$ E(X_i) = \frac{1}{p_i} $</code> và theo
 tính tuyến tính của hàm kỳ vọng, ta có:</p>
 
-<p><code>$$ E(X) = \sum E(X_{i}) = n (1 + \frac{1}{2} + \frac{1}{3} + ... + \frac{1}{n}) 
+<p><code>$$ E(X) = \sum E(X_{i}) = n (1 + \frac{1}{2} + \frac{1}{3} + ... + \frac{1}{n})
 \approx n ln(n) $$</code></p>
 
-<p><code>$$ Var(X) = \sum _{i=1}^{n} Var(X_{i}) \leq \sum _{i=1}^{n} E^2(X_{i}) = 
-\sum _{i=1}^{n} \frac{1}{p^2_{i}} = n^2 \sum _{i=1}^{n} \frac{1}{i^2} 
+<p><code>$$ Var(X) = \sum _{i=1}^{n} Var(X_{i}) \leq \sum _{i=1}^{n} E^2(X_{i}) =
+\sum _{i=1}^{n} \frac{1}{p^2_{i}} = n^2 \sum _{i=1}^{n} \frac{1}{i^2}
 \leq n^2 \sum _{i=1}^{\infty} \frac{1}{i^2} = \frac{n^2 \pi^2}{6} $$</code></p>
 
 <p>Với <code>$ n = 9 $</code>, ta có <code>$ E(X) = n ln(n) = 9 ln(9) \approx 20 $</code>,
@@ -251,6 +252,13 @@ phải deploys trung bình vào khoảng 450-460.</p>
   <script src="//yihui.name/js/math-code.js"></script>
 <script async src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 <script async src="//yihui.name/js/center-img.js"></script>
+
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+<script>
+hljs.configure({languages: []});
+hljs.initHighlightingOnLoad();
+</script>
   
   <hr/>
   &copy; <a href="http://tatd.at">dat</a> 2018 | <a href="https://github.com/taurandat">Github</a> | <a href="https://www.linkedin.com/in/trantatdat/">Linkedin</a>

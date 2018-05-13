@@ -6,10 +6,21 @@
     <description>Recent content in Home on dat</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 11 Apr 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 13 May 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://tatd.at/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Anagram và đa thức đối xứng</title>
+      <link>http://tatd.at/problem-solving/2018-05-13-anagram/</link>
+      <pubDate>Sun, 13 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://tatd.at/problem-solving/2018-05-13-anagram/</guid>
+      <description>Bài toán: Cho hai chuỗi $ s $ và $ t $, làm thế nào để kiếm tra được chuỗi $ t $ có phải là anagram của chuỗi $ s $ hay không?
+ Đơn giản nhất là đếm số lần xuất hiện của từng ký tự trong mỗi chuỗi, rồi kiểm tra xem chúng có khớp nhau không.
+def correct_anagram(s, t): if len(s) != len(t): return False count_s = [0] * 256 # there are 256 ASCII characters count_t = [0] * 256 for s_i, t_i in zip(s, t): count_s[ord(s_i)] += 1 count_t[ord(t_i)] += 1 for i in range(256): if(count_s[i] !</description>
+    </item>
     
     <item>
       <title>Go, Gopher!</title>

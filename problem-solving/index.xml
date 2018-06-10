@@ -6,10 +6,20 @@
     <description>Recent content in Problem-solvings on dat</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 13 May 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 10 Jun 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://tatd.at/problem-solving/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>random()</title>
+      <link>http://tatd.at/problem-solving/2018-06-10-random/</link>
+      <pubDate>Sun, 10 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://tatd.at/problem-solving/2018-06-10-random/</guid>
+      <description>rand5() Developer An wants to get a random integer from the range of $[1, 5]$. Here comes one of the most common mistakes in the history of programming:
+random_number = random() % 5 + 1;  The problem is that: In most programming languages (such as C), the random() function will return a random number from the range $ [0, RAND\_MAX) $. Unless 5 divides RAND_MAX, the outcomes are not equally distributed.</description>
+    </item>
     
     <item>
       <title>Anagram và đa thức đối xứng</title>
